@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit,Input} from '@angular/core';
 
 @Component({
   selector: 'app-name-tag',
@@ -6,7 +6,7 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./name-tag.component.css']
 })
 export class NameTagComponent implements OnInit {
-
+	@Input() name:string;
   constructor() { }
 
   ngOnInit() {
